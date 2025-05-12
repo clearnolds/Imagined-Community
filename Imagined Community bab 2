@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Imagined Communities Bab 2 - Berdasarkan Buku Benedict Anderson dengan Kutipan</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #f0e6d2;
+    min-height: 100vh;
+    padding: 20px 15px 70px;
+    background:
+      linear-gradient(rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)),
+      url('https://images.pexels.com/photos/346766/pexels-photo-346766.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat center center fixed;
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    color: #f0e6d2;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    letter-spacing: 1.1px;
+  }
+  .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .accordion-button {
+    background: rgba(40, 40, 40, 0.75);
+    border: 2px solid #bbb;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 10px 0;
+    color: #f0e6d2;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: background 0.3s ease;
+  }
+  .accordion-button:hover,
+  .accordion-button.active {
+    background: rgba(70, 70, 70, 0.85);
+    color: #fff;
+  }
+  .accordion-button:after {
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    color: #ddd;
+    font-weight: 900;
+  }
+  .accordion-button.active:after {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+  .content-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    background: rgba(50, 50, 50, 0.75);
+    color: #f0e6d2;
+    border-radius: 8px;
+    padding: 0 20px;
+    margin-bottom: 16px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.75);
+    border: 1px solid #999;
+  }
+  .content-panel.open {
+    padding: 14px 20px;
+    max-height: 1400px; /* Adjusted for potentially more content */
+  }
+  .subtopic-button {
+    background: rgba(70, 70, 70, 0.65);
+    border: 1.5px solid #aaa;
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    color: #ddd;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: background 0.25s ease;
+  }
+  .subtopic-button:hover,
+  .subtopic-button.active {
+    background: rgba(100, 100, 100, 0.85);
+    color: #fff;
+  }
+  .subtopic-button:after {
+    content: '▶';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    font-weight: 900;
+    color: #bbb;
+  }
+  .subtopic-button.active:after {
+    transform: translateY(-50%) rotate(90deg);
+  }
+  .nested-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.4s ease;
+    background: rgba(80, 80, 80, 0.75);
+    color: #ddd;
+    border-radius: 6px;
+    margin-top: 4px;
+    padding: 0 16px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    border: 1px solid #bbb;
+  }
+  .nested-content.open {
+    padding: 14px 16px;
+    max-height: 1000px; /* Adjusted for potentially more content */
+  }
+  p {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  blockquote {
+    font-style: italic;
+    margin: 0 0 1rem 0;
+    color: #ccc;
+    border-left: 3px solid #888;
+    padding-left: 10px;
+  }
+  @media (max-width: 400px) {
+    body {
+      padding: 20px 15px 100px;
+    }
+    .container {
+      max-width: 100%;
+    }
+    .accordion-button, .subtopic-button {
+      font-size: 1rem;
+      padding: 12px 16px;
+    }
+  }
+</style>
+</head>
+<body>
+<h1>Imagined Communities Bab 2 - Dengan Kutipan dari Buku Benedict Anderson</h1>
+<div class="container">
+
+<button class="accordion-button" aria-expanded="false" aria-controls="content1" id="btn1">⚰️ Kematian, Agama dan Nasionalisme</button>
+<div class="content-panel" id="content1" role="region" aria-labelledby="btn1">
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent1a" id="subbtn1a">1. Pengertian Kematian Tradisional</button>
+  <div class="nested-content" id="subcontent1a" role="region" aria-labelledby="subbtn1a">
+    <p>Dalam buku ini, Anderson menekankan pentingnya ritual kematian dan kepercayaan agama dalam membentuk solidaritas dan identitas komunitas sebelum masa nasionalisme.</p>
+    <blockquote>"Religious celebrations of death often reinforce the solidarity of community across generations, serving as a binding force."</blockquote>
+    <p>Kematian dalam konteks ini bukan sekadar akhir individu tetapi juga momen solidaritas kolektif yang diproses secara spiritual.</p>
+  </div>
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent1b" id="subbtn1b">2. Peran Ritual Agama</button>
+  <div class="nested-content" id="subcontent1b" role="region" aria-labelledby="subbtn1b">
+    <p>Ritual agama berfungsi tidak hanya sebagai kegiatan sakral tetapi sebagai mekanisme sosial yang menciptakan rasa kebersamaan dan keterikatan emosional.</p>
+    <blockquote>"The emotional power of religious ritual lies in its ability to connect individuals to a larger, imagined community."</blockquote>
+  </div>
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent1c" id="subbtn1c">3. Perubahan Konsep Kematian dalam Nasionalisme</button>
+  <div class="nested-content" id="subcontent1c" role="region" aria-labelledby="subbtn1c">
+    <p>Nasionalisme mengalihkan makna kematian ke ranah duniawi sebagai pengorbanan untuk negara dan komunitas yang diimajinasikan.</p>
+    <blockquote>"Death acquires a new political meaning insofar as individuals conceive themselves as members of an imagined community for whom sacrifice is demanded."</blockquote>
+  </div>
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent1d" id="subbtn1d">4. Simbolisme Kematian dan Solidaritas Kebangsaan</button>
+  <div class="nested-content" id="subcontent1d" role="region" aria-labelledby="subbtn1d">
+    <p>Simbol kematian dalam perang dan peringatan nasional memperkokoh rasa solidaritas dan kesetiaan atas dasar imajinasi kebangsaan.</p>
+    <blockquote>"National mourning rituals transform death into a powerful symbol of collective identity and political unity."</blockquote>
+  </div>
+  </div>
+
+<button class="accordion-button" aria-expanded="false" aria-controls="content2" id="btn2">🏛️ Sistem Budaya Pra Nasionalisme</button>
+<div class="content-panel" id="content2" role="region" aria-labelledby="btn2">
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent2a" id="subbtn2a">1. Struktur Sosial dan Identitas Lokal</button>
+  <div class="nested-content" id="subcontent2a" role="region" aria-labelledby="subbtn2a">
+    <p>Identitas dalam sistem pra nasionalisme terbentuk atas jaringan sosial yang nyata seperti kerabat, agama, dan wilayah kecil.</p>
+    <blockquote>"Before nationalism, people’s identities were grounded in tangible, localized communities marked by kinship and religion."</blockquote>
+  </div>
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent2b" id="subbtn2b">2. Agama dan Kepercayaan dalam Komunitas</button>
+  <div class="nested-content" id="subcontent2b" role="region" aria-labelledby="subbtn2b">
+    <p>Agama dan kepercayaan bersama berperan sebagai pusat identitas dan solidaritas sosial masyarakat tradisional.</p>
+    <blockquote>"Religious beliefs and shared sacred rituals provided the emotional glue binding pre-modern communities."</blockquote>
+  </div>
+  </div>
+
+<button class="accordion-button" aria-expanded="false" aria-controls="content3" id="btn3">⏳ Persepsi Waktu: Perubahan Fundamental</button>
+<div class="content-panel" id="content3" role="region" aria-labelledby="btn3">
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent3a" id="subbtn3a">1. Persepsi Siklus Waktu Tradisional</button>
+  <div class="nested-content" id="subcontent3a" role="region" aria-labelledby="subbtn3a">
+    <p>Konsep waktu tradisional yang bersifat siklis dan berulang mencerminkan struktur sosial dan agama masyarakat pra-nasionalistis.</p>
+    <blockquote>"Time was experienced as cyclical and repetitive, tied to ritual and natural cycles."</blockquote>
+  </div>
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent3b" id="subbtn3b">2. Dampak Teknologi Cetak Terhadap Persepsi Waktu</button>
+  <div class="nested-content" id="subcontent3b" role="region" aria-labelledby="subbtn3b">
+    <p>Penemuan teknologi cetak memungkinkan persepsi waktu linier dan simultan, menyebarkan kesadaran komunitas kebangsaan yang baru.</p>
+    <blockquote>"The printing press produced simultaneously consumable texts that restructured people’s experience of time and history."</blockquote>
+  </div>
+  </div>
+
+<button class="accordion-button" aria-expanded="false" aria-controls="content4" id="btn4">📰 Bentuk Imajinasi Baru: Novel dan Surat Kabar</button>
+<div class="content-panel" id="content4" role="region" aria-labelledby="btn4">
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent4a" id="subbtn4a">1. Peran Novel dalam Bahasa Standar</button>
+  <div class="nested-content" id="subcontent4a" role="region" aria-labelledby="subbtn4a">
+    <p>Novel berfungsi sebagai alat pembentukan bahasa nasional dan imajinasi bersama dalam komunitas kebangsaan.</p>
+    <blockquote>"Novels helped to spread a standardized language and create a shared cultural lexicon."</blockquote>
+    </div>
+  <button class="subtopic-button" aria-expanded="false" aria-controls="subcontent4b" id="subbtn4b">2. Surat Kabar sebagai Media Nasionalisme</button>
+  <div class="nested-content" id="subcontent4b" role="region" aria-labelledby="subbtn4b">
+    <p>Surat kabar memainkan peranan penting dalam mengkonstruksi ruang publik dan pengalaman nasional secara serempak.</p>
+    <blockquote>"Newspapers forged a temporal simultaneity that allowed readers to imagine themselves as part of the nation."</blockquote>
+    </div>
+  </div>
+
+</div>
+<script>
+  const accordionButtons = document.querySelectorAll('.accordion-button');
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!expanded));
+      button.classList.toggle('active');
+      const panel = document.getElementById(button.getAttribute('aria-controls'));
+      if (!expanded) {
+        panel.classList.add('open');
+      } else {
+        panel.classList.remove('open');
+      }
+    });
+  });
+
+  const subtopicButtons = document.querySelectorAll('.subtopic-button');
+  subtopicButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!expanded));
+      button.classList.toggle('active');
+      const panel = document.getElementById(button.getAttribute('aria-controls'));
+      if (!expanded) {
+        panel.classList.add('open');
+      } else {
+        panel.classList.remove('open');
+      }
+    });
+  });
+</script>
+</body>
+</html>
